@@ -16,4 +16,4 @@ Aplikasi berbasis web sederhana untuk menghitung simulasi Pajak Penghasilan (PPh
 ## 📋 Cara Penggunaan
 1. Clone repositori ini ke komputer Anda:
    ```bash
-   git clone [https://github.com/azrial3/kalkulator-pph21.git](https://github.com/azrial3/kalkulator-pph21.git)
+   git clone https://github.com/azrial3/kalkulator-pph21.git
