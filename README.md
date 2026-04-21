@@ -1,4 +1,4 @@
-# Kalkulator Pajak PPh 21 (Pasal 17) 🇮🇩
+# Kalkulator Pajak PPh 21 (Pasal 17)
 
 Aplikasi berbasis web sederhana untuk menghitung simulasi Pajak Penghasilan (PPh) Pasal 21 berdasarkan tarif terbaru UU HPP (Harmonisasi Peraturan Perpajakan). Pengguna cukup memasukkan nominal PKP (Penghasilan Kena Pajak) dan sistem akan menghitung pajak terutang secara progresif.
 
@@ -16,4 +16,4 @@ Aplikasi berbasis web sederhana untuk menghitung simulasi Pajak Penghasilan (PPh
 ## 📋 Cara Penggunaan
 1. Clone repositori ini ke komputer Anda:
    ```bash
-   git clone [https://github.com/username-anda/kalkulator-pph21.git](https://github.com/azrial3/kalkulator-pph21.git)
+   git clone [https://github.com/azrial3/kalkulator-pph21.git](https://github.com/azrial3/kalkulator-pph21.git)
