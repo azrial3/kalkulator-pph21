@@ -27,17 +27,28 @@ h2, h3 {
 
 input {
     padding: 12px;
-    width: 280px;
+    width: 100%; /* Dibuat responsif */
+    max-width: 280px; 
     border: 2px solid #1b5e20;
     border-radius: 6px;
     font-size: 16px;
     margin-top: 10px;
+    box-sizing: border-box; /* Agar padding tidak merusak lebar */
+}
+
+/* --- FITUR RESPONSIVE TABEL --- */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto; /* Scroll horizontal jika tabel terlalu lebar */
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 20px;
+    border: 1px solid #ddd; /* Tambahkan border tipis di pembungkus */
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 20px;
+    min-width: 500px; /* Mencegah tabel 'gepeng' di HP */
 }
 
 th, td {
@@ -51,38 +62,18 @@ th {
     text-align: center; 
 }
 
-.text-center {
-    text-align: center;
-}
+.text-center { text-align: center; }
+.text-right { text-align: right; }
 
-.text-right {
-    text-align: right;
-}
-
-
-.header-green th {
-    background-color: #ffff !important;
-    color: #000000 !important;
-    font-weight: bold;
-    text-align: center; 
-}
-
-th {
-    background-color: #f4f4f4;
-}
-
+/* Header khusus tabel referensi */
 .header-green {
     background-color: #1b5e20 !important;
 }
 
 .header-green th {
-    color: #000000 !important;
+    color: #000000 !important; /* Font tetap hitam sesuai permintaan sebelumnya */
     font-weight: bold;
     text-align: center;
-}
-
-.text-right {
-    text-align: right;
 }
 
 .total-row {
@@ -94,6 +85,7 @@ th {
     font-size: 12px;
     color: #666;
     text-align: center;
+    margin-top: 10px;
 }
 
 .credit {
@@ -114,4 +106,12 @@ th {
 .credit a:hover {
     text-decoration: underline;
     color: #2e7d32;
+}
+
+/* --- OPTIMASI KHUSUS HP --- */
+@media screen and (max-width: 600px) {
+    body { margin: 10px; }
+    .container { padding: 15px; }
+    h2 { font-size: 1.2rem; }
+    th, td { padding: 8px; font-size: 13px; }
 }
